@@ -45,7 +45,7 @@ Test data result
 
 ### Optimized Model #2:
 * The same amount of layers and neurons were used for this model but the activation for the layers was changed to LeakyReLU and the outer layer activation to tanh. These activations were used as an attempt to improve the accuracies since the standardized dataset used is in small negative to positve numbers.
-* The model performance did not improve with the change in activation and decreased in accuracy to 72.3% with 60.3% in training data and 71.8% with 76.4% loss.
+* The model performance did not improve with the change in activation and decreased in accuracy to 72.3% with 60.3% loss in training data and 71.8% with 76.4% loss in testing data.
 
 Train data result
 ![nnopt2_train.png](/Resources/nnopt2_train.png)
@@ -66,7 +66,7 @@ Test data result
 
 ## Summary: 
 
-The overall results of the deep learning models discussed ranges from 71.8 - 72.7%. The accuracy results were only slightly varied between all the models but the loss increases as we increased the layers and nodes.  The optimized model #3 performed the best in accuracy but highest in loss.  
+The overall results of the deep learning models discussed ranges from 71.8% - 72.7%. The accuracy results were only slightly varied between all the models but the loss increases as we increased the layers and nodes.  The optimized model #3 performed the best in accuracy but highest in loss.  
 
 As mentioned earlier, the models discussed were the better results from multiple testing through additional preprocessing of data, such as changing the APPLICATION_TYPE and CLASSIFICATION bin ranges, as well as attempt to bin the ASK_AMT data.  All attempts produced lower than presented models in this report and the preprocessed data from the initial model was kept, with additional dropping of the STATUS and SPECIAL_CONSIDERATIONS columns.
 
@@ -76,7 +76,7 @@ Using sort features importance, the AMT_STATUS column is ranked the highest impo
 
 Besides deep neuro network, the Alphabet Soup Charity dataset was tested with easy ensemble AdaBoost classifier and resulted in only a 71% accuracy score.  As another supervised machine learning model, this also did not accomplish the goal of >75% accuracy.
 
-![easy_ensemble.png] (/Resources/easy_ensemble.png)
+![easy_ensemble.png](/Resources/easy_ensemble.png)
 
 To increase the accuracy to >75%, other factors to consider may be to increase the dataset or continued transformation of the dataset.  Also increasing the layers and neurons did show an increase in accuracy slightly - the model could be optimized further with additional layers and neurons beyond the 10 layers in this analysis.
 
